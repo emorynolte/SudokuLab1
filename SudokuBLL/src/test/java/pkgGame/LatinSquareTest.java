@@ -41,4 +41,19 @@ public class LatinSquareTest {
 		assertFalse(ls.doesElementExist(myIntArray, iValue));
 		
 	}
+	
+	public void getColumnTest()
+	{
+		int[][] myArray = { {1,2,3}, {2,1,3}, {3,2,1} };
+		LatinSquare ls = new LatinSquare(myArray);
+		
+		int testValue = 1;
+		int[] correctArray = { 2, 1, 2 };
+		
+		
+		assertTrue(ls.getColumn(testValue) == correctArray );
+	}
+	
+	
+	
 }
